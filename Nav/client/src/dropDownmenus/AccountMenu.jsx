@@ -1,5 +1,6 @@
 import React from 'react';
 import CloseButton from '../buttons/CloseButton.jsx';
+import tick from '../assets/check_tick.png';
 
 const AccountMenu = props => (
     <div className="navbar-menu-box-right">
@@ -67,19 +68,19 @@ const AccountMenu = props => (
                                 <p className="navbar-create-account-description">Sign up and enjoy these benefits:</p>
                                 <ul>
                                     <li className="navbar-create-account-text" style={{ "margin": "0 0 15px"}}>
-                                        <img className="navbar-create-account-check" src="https://origin-master.s3-us-west-1.amazonaws.com/check.svg" />
+                                        <img className="navbar-create-account-check" src={tick} />
                                          Exclusive member-only offers
                                     </li>
                                     <li className="navbar-create-account-text" style={{ "margin": "0 0 15px" }}>
-                                        <img className="navbar-create-account-check" src="https://origin-master.s3-us-west-1.amazonaws.com/check.svg" />
+                                        <img className="navbar-create-account-check" src={tick} />
                                          Rewards for your purchases
                                     </li>
                                     <li className="navbar-create-account-text" style={{ "margin": "0 0 15px" }}>
-                                        <img className="navbar-create-account-check" src="https://origin-master.s3-us-west-1.amazonaws.com/check.svg" />
+                                        <img className="navbar-create-account-check" src={tick} />
                                          Faster checkout & easy order tracking
                                     </li>
                                     <li className="navbar-create-account-text" style={{ "margin": "0 0 15px" }}>
-                                        <img className="navbar-create-account-check" src="https://origin-master.s3-us-west-1.amazonaws.com/check.svg" />
+                                        <img className="navbar-create-account-check" src={tick} />
                                          Saved purchase history
                                     </li>
                                 </ul>

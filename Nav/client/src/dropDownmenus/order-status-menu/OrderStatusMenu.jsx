@@ -1,5 +1,6 @@
 import React from 'react';
 import CloseButton from '../../buttons/CloseButton.jsx';
+import orderIcon from '../../assets/order_icon.png';
 
 const OrderStatusMenu = props => (
     <div className="navbar-menu-box-right">
@@ -8,7 +9,7 @@ const OrderStatusMenu = props => (
                 <div className="navbar-carousel-header">
                     <h2 className="navbar-carousel-header-content">
                         <span>
-                            <img src="https://origin-master.s3-us-west-1.amazonaws.com/order_status.svg" width="34" style={{ "marginRight": "10px", "marginBottom": "3px", "height": "30px" }} />
+                            <img src={orderIcon} width="34" style={{ "marginRight": "10px", "marginBottom": "3px", "height": "30px" }} />
                                 Order Status
                                 </span>
                     </h2>
@@ -28,9 +29,6 @@ const OrderStatusMenu = props => (
                             <a href="#">
                                 <button className="navbar-btn navbar-btn-secondary">Continue</button>
                             </a>
-                        </div>
-                        <div>
-                            <img src="https://origin-master.s3-us-west-1.amazonaws.com/bbemployee.png" className="navbar-blue-shirt" />
                         </div>
                     </div>
                 </div>

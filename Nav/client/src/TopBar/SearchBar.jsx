@@ -1,6 +1,7 @@
 import React from 'react';
 import AutoCompleteBox from '../AutoCompleteBox/AutoCompleteBox.jsx';
 import axios from 'axios';
+import searchIcon from '../assets/search_icon.png'
 var _ = require('lodash');
 
 
@@ -81,7 +82,7 @@ class SearchBar extends React.Component {
 
                 <button className="navbar-searchbutton" style={{ "border-radius": "0 4px 4px 0" }}>
                     <span className="navbar-searchicon">
-                        <img src="https://origin-master.s3-us-west-1.amazonaws.com/search_icon.svg" />
+                        <img src={searchIcon} />
                     </span>
                 </button>
             </div>

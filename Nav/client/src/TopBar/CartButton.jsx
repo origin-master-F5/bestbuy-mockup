@@ -1,9 +1,10 @@
 import React from 'react';
+import cartIcon from '../assets/cart.png'
 
 const CartButton = props => (
     <div className="navbar-cart-container">
         <a>
-            <img src="https://origin-master.s3-us-west-1.amazonaws.com/bbcart.svg"/>
+            <img src={cartIcon}/>
             <span className="navbar-cart-label">
                 Cart
             </span>

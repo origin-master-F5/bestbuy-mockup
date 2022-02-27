@@ -1,8 +1,9 @@
 import React from 'react';
+import logo from '../assets/logo.png'
 
 const Logo = props => (
     <div className="navbar-logo-container">
-        <img className="navbar-logo" src="https://origin-master.s3-us-west-1.amazonaws.com/bblogo.png" />
+        <img className="navbar-logo" src={logo} />
     </div>
 )
 

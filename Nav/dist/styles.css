@@ -553,6 +553,14 @@ body {
     text-align: unset;
 }
 
+.nav-account-icon{
+  padding-right: 5px;
+}
+
+.nav-dropdown-arrow {
+  padding-left: 3px;
+}
+
 .menu-box-left {
   display: none;
   max-width: 350px;
@@ -1122,8 +1130,8 @@ address {
 }
 
 .navbar-create-account-check {
-  width: 13px;
-    height: 13px;
+  width: 12px;
+    height: 12px;
     vertical-align: text-top;
 }
 

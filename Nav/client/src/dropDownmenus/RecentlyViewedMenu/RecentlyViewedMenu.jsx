@@ -1,6 +1,7 @@
 import React from 'react';
 import ItemCard from './ItemCard.jsx';
 import CloseButton from '../../buttons/CloseButton.jsx';
+import clockIcon from '../../assets/clock_icon.png';
 
 const RecentlyViewedMenu = props => (
 
@@ -10,7 +11,7 @@ const RecentlyViewedMenu = props => (
                 <div className="navbar-carousel-header">
                     <h2 className="navbar-carousel-header-content">
                         <span>
-                            <img src="https://origin-master.s3-us-west-1.amazonaws.com/order_history.svg" width="34" style={{ "margin-right": "10px", "margin-bottom": "3px", "height": "30px" }} />
+                            <img src={clockIcon} width="34" style={{ "margin-right": "10px", "margin-bottom": "3px", "height": "30px" }} />
                                 You recently viewed
                                 </span>
                     </h2>
