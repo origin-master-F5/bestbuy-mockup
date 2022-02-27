@@ -134,7 +134,7 @@ li {
   margin-left: 7px;
   color: #0457c8;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 14px;
   cursor: pointer;
 }
 
@@ -156,7 +156,7 @@ li {
 .display-star-review {
   margin-left: 5px;
   color: #0457c8;
-  font-size: 15px;
+  font-size: 14px;
   position: relative;
 }
 
@@ -202,7 +202,7 @@ li {
 
 .display-questions {
   font-weight: 400;
-  font-size: 15px;
+  font-size: 14px;
   color: #0457c8;
   border-left: solid;
   padding-left: 12px;
@@ -487,13 +487,13 @@ strong {
 .modal-main {
   position: fixed;
   background: white;
-  width: 100vw;
+  width: 85vw;
   height: 96vh;
   top: 20px;
-  left: 20px;
-   overflow-y: scroll;
-    overflow-x: hidden;
-    box-sizing: border-box;
+  left: 7%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  box-sizing: border-box;
     
 }
 
@@ -544,7 +544,7 @@ strong {
 }
 
 .display-dollar-text {
-  padding-left: 1px;
+  padding-left: 2px;
   cursor: pointer;
 }
 
@@ -735,6 +735,7 @@ strong {
 }
 .display-geek-badge-header {
     align-items: middle;
+    padding-left: .5em;
 }
 
 .display-geek-badge-header-text {
@@ -761,7 +762,7 @@ strong {
 }
 .display-geek-header-review-count {
     color: #0457c8;
-    font-size: 12px;
+    font-size: 11px;
     margin-left: 5px;
     vertical-align: middle;
     margin-bottom: 2px;
@@ -798,7 +799,7 @@ strong {
 
 .display-geekplan-text {
   margin-left: 35px;
-  font-size: 13px;
+  font-size: 11px;
   /* word-wrap: break-word; */
   margin-right: 200px;
   position: absolute;
@@ -807,10 +808,10 @@ strong {
 
 .display-geekplan-check {
   color:#0457c8;;
-  font-size: 22px;
+  font-size: 20px;
   position: absolute;
-  top: -8px;
-  left: 3px;
+  top: -7px;
+  left: 4px;
 }
 
 .display-geekplan-text-price {
@@ -818,13 +819,14 @@ strong {
  font-weight: 700;
 }
 .display-geekplan-text-price-monthly {
-    font-size: 12px;
+    font-size: 11px;
 }
 .display-geekplan-text-learnmore{
-    font-size: 13px;
+    font-size: 12px;
     color: #0457c8;
-    margin-top: 7px;
+    margin-top: 4em;
     margin-left: 2px;
+    padding-left: 2.5em
 }
 .display-geekplan-text-learnmore:hover {
     color: #001a66;
@@ -846,14 +848,16 @@ strong {
 }
 
 .display-pickup-stores {
-    font-size: 13px;
+    font-size: 11px;
     color: #0457c8;
     cursor: pointer;
+    margin-top: .5em;
 }
 
 .display-pickup-text-important {
     font-size: 13px;
     font-weight: 700;
+    margin-top: 1em;
 }
 .display-pickup-text-important-paragraph {
     font-weight: 500;
@@ -1162,7 +1166,6 @@ strong {
 .display-cardmember-text {
     font-size: 15px;
     font-weight: 700;
-    margin-top: 5px;
 }
 
 .display-cardmember-rewards {
@@ -2142,11 +2145,11 @@ strong {
 }
 
 .display-histogram-popover {
-    left: 100px;
+    left: 75px;
     z-index: 100; 
     margin-top: 20px;
     position: absolute;
-    min-width: 260px;
+    min-width: 220px;
     display: block;
     background: #fff;
     border: 1px solid #c5cbd5;
@@ -2164,8 +2167,8 @@ strong {
     border: 11px solid transparent;
     position: absolute;
     display: block;
-    width: 12px;
-    height: 12px;
+    width: 4px;
+    height: 4px;
     z-index: 102;
     padding-right: 4px;
     padding-top: 4px;
@@ -2254,6 +2257,12 @@ strong {
     text-align: center;
     color: #0046be;
     cursor: pointer;
+    font-size: 12px;
+}
+
+.display-histogram-read-reviews-link a {
+    text-decoration: none;
+    color: #0046be;
 }
 
 .display-histogram-read-reviews-link > .active {

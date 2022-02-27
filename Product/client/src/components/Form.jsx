@@ -6,6 +6,7 @@ import Cart from './Cart.jsx';
 import Bundle from './Bundle.jsx';
 import Compare from './Compare.jsx';
 import Cardmember from './Cardmember.jsx';
+import dollar from '../../assets/dollar_sign.png';
 
 class Form extends React.Component {
     constructor(props) {
@@ -58,7 +59,8 @@ class Form extends React.Component {
                 <button className="display-rich-dropdown-trigger" >
                     <span className="display-variation-dropdown-tile" >
                     <span className="display-variation-image-wrapper" >
-                        <img className="display-variation-tile-image" src={this.props.compatible_platforms[0]} /> 
+                        {/* <img className="display-variation-tile-image" src={this.props.compatible_platforms[0]} />  */}
+                        {this.props.compatible_platforms[0]}
                     </span>
                     <i id="display-chevron-tile"className="up-icon ion-chevron-down" onClick={this.showDropDown}></i>
                     </span>
@@ -72,7 +74,8 @@ class Form extends React.Component {
                    <button className="display-rich-dropdown-trigger " >
                                 <span className="display-variation-dropdown-tile display-dropdown-show" >
                                 <span className="display-variation-image-wrapper" >
-                                    <img className="display-variation-tile-image" src={this.props.compatible_platforms[0]} /> 
+                                    {/* <img className="display-variation-tile-image" src={this.props.compatible_platforms[0]} />  */}
+                                    {this.props.compatible_platforms[0]}
                                 </span>
                                 </span>
                     </button>
@@ -81,7 +84,8 @@ class Form extends React.Component {
                     <button className="display-rich-dropdown-trigger " >
                         <span className="display-variation-dropdown-tile display-dropdown-show" >
                         <span className="display-variation-image-wrapper" >
-                            <img className="display-variation-tile-image" src={this.props.compatible_platforms[1]} /> 
+                            {/* <img className="display-variation-tile-image" src={this.props.compatible_platforms[1]} />  */}
+                            {this.props.compatible_platforms[1]}
                         </span>
                         </span>
                     </button>
@@ -151,7 +155,7 @@ class Form extends React.Component {
            <div className="display-pricing-container">
               <div className="display-price-match">
                   <div className="display-dollar-icon">
-                     <img className="display-dollar-image" src="https://bb-clone.s3-us-west-1.amazonaws.com/general/price_icon.png" height="14" width="16"></img>
+                     <img className="display-dollar-image" src={dollar} height="16" width="14"></img>
                      <span className="display-dollar-text">Price Match Guarantee
                         </span>
                   </div>
@@ -172,7 +176,7 @@ class Form extends React.Component {
                         <div className="display-variation-header">
                             <span className="display-compatible-label" >
                                 <label className="display-software-platform">
-                                    Compatible Platform(s)
+                                    Compatible Platform(s):
                                 </label>
                                 {this.showCompatibleSelection()}
                             </span>

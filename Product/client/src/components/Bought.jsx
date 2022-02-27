@@ -5,8 +5,8 @@ const Bought = props => {
         <div className="display-bought-shop-product-carousel">
             <div className="display-bought-shop-product-carousel-mini">
                 <button className="display-bought-shop-product-button">
-                    {props.category === "Nintendo Switch" && <img className="display-bought-shop-product-image" src="https://bb-clone.s3-us-west-1.amazonaws.com/general/p_also_bought_nintendo_switch.png" />}
-                    {props.category === "PlayStation 4" && <img className="display-bought-shop-product-image" src="https://bb-clone.s3-us-west-1.amazonaws.com/general/p_also_bought_ps4.png" />}
+                    {props.category === "Nintendo Switch" && <img className="display-bought-shop-product-image" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6486/6486410_sd.jpg;maxHeight=136;maxWidth=200" />}
+                    {props.category === "PlayStation 4" && <img className="display-bought-shop-product-image" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6486/6486410_sd.jpg;maxHeight=136;maxWidth=200" />}
                 </button>
             </div>
         </div>

@@ -62,7 +62,7 @@ class App extends React.Component {
     }
     
     getProducts(){
-      Axios.get('/product')
+      Axios.get('http://localhost:3002/product')
       .then(results => {
         let nameandCategory = results.data[0].name + ' - ' + results.data[0].category;
         console.log('name', nameandCategory);
@@ -119,7 +119,7 @@ class App extends React.Component {
     
     getPerItemName(sku) {
       let name = sku;
-      Axios.get(`/product/name/${name}`)
+      Axios.get(`http://localhost:3002/product/name/${name}`)
       .then(results => {
         if (results.data === null) {
           alert("Product not found");
@@ -168,7 +168,7 @@ class App extends React.Component {
     }
     
     getNewItem(sku) {
-      Axios.get(`/product/sku/${sku}`)
+      Axios.get(`http://localhost:3002/product/sku/${sku}`)
           .then(results => {
             if (results.data === null) {
               alert("Product not found");
@@ -268,7 +268,7 @@ class App extends React.Component {
                     <ProductImageList entire_product={this.state.entire_product} changeP={this.changeProduct} ref={this.showProductModal}
                     still_img_videos={this.state.still_img_videos} miniplayer_videos={this.state.miniplayer_videos} video_length={this.state.video_length}/>
                     <div className="display-media-links-container">
-                     <span className="display-media-links-interactive-tour">Interactive Tour and documents ></span>
+                     <span className="display-media-links-interactive-tour">Interactive Tour and documents </span>
                     </div>         
                   </div>
                </div>

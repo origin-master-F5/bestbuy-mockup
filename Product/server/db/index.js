@@ -13,17 +13,4 @@ db.once('open', function() {
   console.log('Mongoose connected');
 });
 
-// module.exports = async () => {
-//     try {
-//         await mongoose.connect( URI )
-//         var db = mongoose.connection
-//         db.once('open', () => console.log('db connected'))
-//         console.log('Mongoose connected')  
-        
-
-//     } catch (error) {
-//         console.log('Mongoose error:', error)
-//     }
-// }
-
 module.exports = db;

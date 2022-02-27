@@ -1,5 +1,6 @@
 import React from 'react';
 import Videos from './Videos.jsx';
+import close_icon from '../../assets/close.png'
 
   class ProductModal extends React.Component {
       constructor(props){
@@ -162,7 +163,7 @@ import Videos from './Videos.jsx';
              </div>
            </div>
            <button className="display-productmodal-c-close-icon" onClick={() => this.props.close()}>
-              <img src="https://bb-clone.s3-us-west-1.amazonaws.com/general/close_icon.png" height="15"></img>
+              <img src={close_icon} height="15"></img>
            </button>
         </div>
       </div>
