@@ -1,33 +1,40 @@
-
 {
   "name": "product-display-component",
   "version": "1.0.0",
   "description": "Best Buy clone",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack -d --watch",
     "start": " nodemon server/",
-    "seed": "node server/utils/seedData.js",
-    "fake": "node server/utils/fakeIt.js"
+    "seed": "node server/seed/generateProducts.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CodyPenny/Product-display-Component.git"
+    "url": "git+https://github.com/origin-master-F5/bestbuy-mockup.git"
   },
   "author": "Evelyn",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CodyPenny/Product-display-Component/issues"
+    "url": "https://github.com/origin-master-F5/bestbuy-mockup.git"
   },
-  "homepage": "https://github.com/CodyPenny/Product-display-Component#readme",
+  "homepage": "https://github.com/origin-master-F5/bestbuy-mockup.git#readme",
   "dependencies": {
+    "axios": "^0.26.0",
+    "body-parser": "^1.19.2",
+    "express": "^4.17.3",
+    "faker": "^5.5.3",
+    "mongoose": "^6.2.3",
+    "path": "^0.12.7",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
-    "devDependencies": {
+  "devDependencies": {
     "@babel/core": "^7.8.7",
     "@babel/preset-env": "^7.8.7",
     "@babel/preset-react": "^7.8.3",
     "babel-loader": "^8.0.6",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15",
     "webpack": "^4.42.0",
     "webpack-cli": "^3.3.11"
   }
