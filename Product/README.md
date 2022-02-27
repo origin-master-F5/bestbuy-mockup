@@ -30,3 +30,9 @@ Populate the database with the product data.
 Run the server
 
     npm run start
+
+## Frontend Setup
+
+Create the development build and run webpack
+
+    npm run build
