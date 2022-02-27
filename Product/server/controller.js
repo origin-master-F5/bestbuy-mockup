@@ -1,4 +1,4 @@
-const Product = require('../db-mongodb/model');
+const Product = require('./db/model');
 
 module.exports = {
   getAll(req, res) {
