@@ -2,7 +2,8 @@
 
 ## Project Description
 
-One of three microservices that is integrated to the main application. It presents the navigation elements such as links to other sections of the website and the header. It is also a search bar that takes in text and dynamically filters the products that match the search criteria.
+One of three microservices that is integrated to the main application. 
+It presents the header and the navigational elements such as the links to other sections of the website. It is also a search bar that takes in text and dynamically filters products that match the search criteria.
 
 ## Technologies
 

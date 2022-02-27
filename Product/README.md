@@ -36,3 +36,7 @@ Run the server
 Create the development build and run webpack
 
     npm run build
+    
+## Features
+
+<img width="1016" alt="Screen Shot 2022-02-27 at 10 53 23 AM" src="https://user-images.githubusercontent.com/53372490/155895700-8a76939c-562a-4f49-bcca-b59500e6a394.png">
