@@ -10,4 +10,4 @@ A microservice architectural approach is taken to organize and maintain loosely 
 
 ## Features
 
-![](https://media.giphy.com/media/gb6kjjG8axQHOlw7Nk/giphy.gif")
+![](https://github.com/CodyPenny/addGif_1/blob/master/bestbuy_lg-min.gif)
