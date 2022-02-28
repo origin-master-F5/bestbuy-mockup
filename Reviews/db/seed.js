@@ -1,14 +1,23 @@
 const db = require('./index.js');
-const Review = require('./schemas.js');
+const Review = require('./schema.js');
 const faker = require('faker')
 
 const randomRange = (min, max) => {
     return Math.round(Math.random() * (max - min) + min)
 }
 
-const arrOfPics = ["https://pisces.bbystatic.com/image2/BestBuy_US/ugc/photos/thumbnail/fb57e3b34cab99f9c2dcfb56d545c8a5.jpg", "https://pisces.bbystatic.com/image2/BestBuy_US/ugc/photos/thumbnail/a5e778d2eb3032ed2547a0972a235803.jpg", "https://pisces.bbystatic.com/image2/BestBuy_US/ugc/photos/thumbnail/72a72bd4b1abfd0e25f08d8212d8cb48.jpg", "https://i.ytimg.com/vi/rNMDQuRHUkE/maxresdefault.jpg;maxHeight=140;maxWidth=140", "https://pisces.bbystatic.com/image2/BestBuy_US/ugc/photos/thumbnail/befe834333cfafb0038de4fb770868fb.jpg", "https://pisces.bbystatic.com/image2/BestBuy_US/ugc/photos/thumbnail/7f2f6d39d97765efa9f31b9a3b0c9edc.jpg"]
+const arrOfPics = [
+    "https://pisces.bbystatic.com/image2/BestBuy_US/ugc/photos/thumbnail/fb57e3b34cab99f9c2dcfb56d545c8a5.jpg", 
+    "https://pisces.bbystatic.com/image2/BestBuy_US/ugc/photos/thumbnail/a5e778d2eb3032ed2547a0972a235803.jpg", 
+    "https://pisces.bbystatic.com/image2/BestBuy_US/ugc/photos/thumbnail/72a72bd4b1abfd0e25f08d8212d8cb48.jpg", 
+    "https://i.ytimg.com/vi/rNMDQuRHUkE/maxresdefault.jpg;maxHeight=140;maxWidth=140", 
+    "https://pisces.bbystatic.com/image2/BestBuy_US/ugc/photos/thumbnail/befe834333cfafb0038de4fb770868fb.jpg", 
+    "https://pisces.bbystatic.com/image2/BestBuy_US/ugc/photos/thumbnail/7f2f6d39d97765efa9f31b9a3b0c9edc.jpg"
+]
 
-let samples = [{
+// starter reviews for sample sku
+let samples = [
+    {
         "sku": 1,
         "title": "Underwhelming tbh",
         "rating": 2,
@@ -102,11 +111,11 @@ let samples = [{
     }
 ]
 
-const generateData = (generations) => {
-        //generate data
+const generateData = (num_of_reviews) => {
+
         let reviews = [];
 
-        while (generations) {
+        while (num_of_reviews) {
             let obj = {}
             obj.sku = randomRange(1, 100)
             obj.title = faker.commerce.productName()
@@ -128,17 +137,20 @@ const generateData = (generations) => {
             }
             obj.purchasedDate = faker.date.past(2)
             reviews.push(obj)
-            generations--
+            num_of_reviews--
         }
 
         return reviews
-    }
+}
     //////////////////////////////////////////////////////////
     //   NEED TO CREATE FUNCTION TO CREATE UNIQUE REVIEWS   //
     //////////////////////////////////////////////////////////
+
+const NUM_OF_REVIEWS = 500
+
 const insertSamples = () => {
     Review.deleteMany({})
-        .then(Review.create(samples.concat(generateData(1000))))
+        .then(Review.create(samples.concat(generateData(NUM_OF_REVIEWS))))
         .then(() => console.log('ready to close mongo!'))
 }
 

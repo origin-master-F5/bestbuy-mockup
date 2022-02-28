@@ -1,5 +1,8 @@
 const mongoose = require('mongoose');
 
+/**
+ * You database
+ */
 const URI = 'mongodb://127.0.0.1:27017/reviews'
 
 mongoose.connect(URI);

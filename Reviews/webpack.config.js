@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+    mode: 'development',
     entry: path.resolve(__dirname, 'client/src/index.jsx'),
     output: {
         filename: 'bundle.js',
@@ -16,6 +17,18 @@ module.exports = {
                     presets: ['@babel/preset-env', '@babel/preset-react']
                 }
             }
-        }]
+        }, 
+        {
+            test: /\.(png|jp(e*)g|svg|gif)$/,
+            use: 
+              {
+                loader: 'file-loader',
+                options: {
+                  name: 'images/[hash]-[name].[ext]',
+                },
+              },
+            
+          },
+        ]
     }
 };
